@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="nav-main">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="#home">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#calc">
+                        <span class="icon">
+                            <ion-icon name="calculator-outline"></ion-icon>
+                        </span>
+                        <span class="text">Kalkulator</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div id="home" class="home">
+                <div class="row h-100">
+                    <div class="col-6 home-text my-auto">
+                        <h1>Praca na zaliczenie</h1>
+                        <p>Przedstawiona strona internetowa jest projektem zaliczeniowym przedmiotu
+                            <strong>Narzędzia procesu tworzenia oprogramowania</strong>
+                        </p>
+                        <p>Stworzona aplikacja to kalkulator obliczeniowy.</p>
+                        <p>Aby przejść do kalkulatora należy wybrać pozycję kalkulatora z menu lub kliknąć w następujące
+                            przekierowanie -><span><a href="#calc">Kalkulator</a></span></p>
+                    </div>
+                    <div class="col-6 my-auto home-img">
+                        <img src="img/calculator-removebg-preview.png" alt="Zdjęcie kalkulatora">
+                    </div>
+                </div>
+            </div>
+            <div id="calc" class="calculator">
+                <div class="row h-100">
+                    <div class="col-12 text-center my-auto">
+                        <h2 class="my-5">Dostępne kalkulatory</h2>
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">"Ile za paliwo?"</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">Kalkulator BMI</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <div class="row justify-content-center">
+                                    <h3 class="text-center mt-5">Oblicz swoje BMI</h3>
+                                    <div class="col-4"><label>Waga<input type="text" name="" id="weight"></label></div>
+                                    <div class="col-4"><label>Wysokość<input type="text" name="" id="height"></label>
+                                    </div>
+                                    <div class="col-12 mt-5 text-center calc-bmi"><button class="calc-btn"
+                                            id="btn">Oblicz</button></div>
+                                    <div id="result" class="result"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <div class="row justify-content-center">
+                                    <h3 class="text-center mt-5">Oblicz swoje BMI</h3>
+                                    <div class="col-3"><label>Przejechany dystans<input type="text" name=""
+                                                id="dystans"></label></div>
+                                    <div class="col-3"><label>Średnie spalanie<input type="text" name=""
+                                                id="spalanie"></label></div>
+                                    <div class="col-3"><label>Cena Paliwa<input type="text" name="" id="cena"></label>
+                                    </div>
+                                    <div class="col-3"><label>Ilość osób<input type="text" name="" id="osoby"></label>
+                                    </div>
+                                    <div class="col-12 mt-5 text-center calc-bmi"><button class="calc-btn"
+                                            id="btn2">Oblicz</button></div>
+                                    <div id="result2" class="result"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="col-md-6">2022 &copy;</div>
+        <div class="col-md-6">Stronę opracował: Jakub Jurgiel</div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
