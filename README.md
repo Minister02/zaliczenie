@@ -14,3 +14,6 @@ Wykorzystane języki:
 - HTML
 - CSS
 - JavaScript
+
+Wykonał:
+Jakub Jurgiel
