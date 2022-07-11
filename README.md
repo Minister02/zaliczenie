@@ -17,3 +17,4 @@ Wykorzystane języki:
 
 Wykonał:
 Jakub Jurgiel
+1 Rok, Informatyka Stosowana
